@@ -10,7 +10,7 @@ export default function aboutUs(){
         <div className="team">
             <div className="about_team">
                 <div className="about_team_img">
-              <Image className="hasnain_img" src={Hasnain}></Image>
+              <Image alt="Face" className="hasnain_img" src={Hasnain}></Image>
                 </div>
                 <div className="about_team_text"> 
                 <div className="text-contain">
@@ -32,12 +32,18 @@ export default function aboutUs(){
             </div>
             <div className="about_team">
                 <div className="about_team_img faiz_team">
-                    <Image className="faiz_img" src={faiz}></Image>
+                    <Image alt="face" className="faiz_img" src={faiz}></Image>
                 </div>
                 <div className="about_team_text">
                     <h2> Syed Ali Faiz Zaidi </h2>
+                    <hr />
                     <p>Frontend Web Developer</p>
+                    <hr />
                     <p>I'm a 22 year-old Pakistani Frontend Web Developer started about 6 months ago , always had a passion for coding and once I got introduced to web development it caught my attention.</p>
+                    <hr/>
+                    <h2>Known Languages</h2>
+                    <hr/>
+                    <p>HTML, CSS, JavaScript, React, Typescript, NextJS, TailwindCSS, Redux, and Firebase.</p>
                 </div>
             </div>
         </div>
