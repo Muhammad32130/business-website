@@ -2,7 +2,7 @@
 import logo from "../images/logo3.png"
 import Image from "next/image";
 
-export default function Navbar(){
+export default function Navbar({modal,setmodal}){
     
     
     return(
@@ -11,7 +11,7 @@ export default function Navbar(){
             <ul className="nav_ul">
                 <li className="nav_li" >Home</li>
                 <li className="nav_li" >About</li>
-                <li className="nav_li" >Contacts</li>
+                <li className="nav_li" onClick={()=>setmodal(!modal)} >Contacts</li>
             </ul>
         </nav>
     )

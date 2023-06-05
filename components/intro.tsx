@@ -1,9 +1,12 @@
 import Image from "next/image";
 import image from "../images/undraw_website_setup_re_d4y9.svg"
-
-export default function Intro(){
+import Modal from "../components/Modal";
+export default function Intro({modal, setmodal}){
     return(
-     <div className="intro_main">
+     <div className="intro_main">{
+modal &&
+            <Modal modal={modal} />
+     }
             <div className="row_intro">
             <h1 className="intro_goals">Our Goal</h1>
             <p className="intro_description">
