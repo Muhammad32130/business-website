@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Intro from '@/components/intro'
 import About from '@/components/About'
-import Project from '@/components/Project.tsx'
+import Project from '@/components/Project'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
 
