@@ -1,9 +1,10 @@
-export default function modal({modal}:any){
+export default function modal({modal, setmodal}:any){
     return(
 
-        <div className={`absolute_modal ${modal ? 'grow': 'close'}`}>
+        <div className='absolute_modal '>
         <div className="modal_main">
-        <div className="modal_row">
+            <div className="modal_bg" onClick={()=>{setmodal(false)}}></div>
+        <div className={`modal_row ${modal && 'grow'}`}>
         <form className="form_main" action="/">
             <h2>
             Contact Us to get a quick quote for your business!

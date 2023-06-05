@@ -4,7 +4,8 @@ import faiz from "../images/dsds.jpeg"
 
 export default function aboutUs(){
     return (
-        <>
+        <div id="about">
+
         <div className="about_us bg">
         <h1 className="intro_goals team_text">Our Team</h1>
         <div className="team">
@@ -57,7 +58,7 @@ export default function aboutUs(){
                 </div>
 
 
+        </div>
         
-        </>
     )
 }

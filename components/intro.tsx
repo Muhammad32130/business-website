@@ -9,12 +9,11 @@ interface Props {
 
 
 export default function Intro({modal,setmodal}: Props){
-       console.log(modal)
 
     return(
      <div className="intro_main">{
 modal ?
-            <Modal modal={modal} />:null
+            <Modal modal={modal} setmodal={setmodal} />:null
      }
             <div className="row_intro">
             <h1 className="intro_goals">Our Goal</h1>

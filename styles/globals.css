@@ -4,12 +4,16 @@
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Saira Condensed', sans-serif;
   color: white;
+  scroll-behavior: smooth;
   }
-
+.scrollNone{
+  overflow-y: hidden;
+}
 
 body{
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 .nav{
   background-color: rgb(4, 0, 5);
@@ -86,7 +90,7 @@ height: 200px;
   border-radius: 50%;
 }
 .about_us{
-  padding-top: 10rem;
+  padding-top: 2rem;
 }
 .faiz_team{
   width: 200px;
@@ -159,6 +163,10 @@ width: 100%;
   align-items: center;
   justify-content: center;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 .project_text{
   position: absolute;
  z-index: -20;
@@ -229,6 +237,7 @@ overflow-x: hidden;
 .footer_li{
 margin-left: 5rem;
 margin-right: 5rem;
+cursor: pointer;
 }
 .footer_list{
   width: 100%;
@@ -245,8 +254,6 @@ font-weight: 600;
   width: 100%;
   position: absolute;
   top: 0;
-  background-color: rgb(179, 163, 163, 0.3);
-
 }
 .modal_main{
   width: 100%;
@@ -258,10 +265,19 @@ font-weight: 600;
 .modal_row{
   background-color: rgb(202, 36, 36);
   border-radius: 5px;
+  visibility: hidden;
   width: 50%;
   height: 60%;
+  z-index: 3;
 }
-
+.modal_bg{
+  background-color: rgb(179, 163, 163, 0.3);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
 
 
 .form_main{
@@ -297,8 +313,30 @@ align-items: center;
  padding: 8px 16px 8px 16px ;
 }
 .grow{
-  flex-grow: 1;
+  transition: all ease-in-out;
+  animation: grow 150ms linear forwards;
+  visibility: visible;
 }
-.close{
-  flex-shrink: 1;
+@keyframes grow{
+  from{
+transform: scale(0);
+  }
+  to{
+  transform: scale(1);
+  }
 }
+.close {
+  animation: close 150ms linear forwards;
+  visibility: hidden;
+  transition: all ease-in-out;
+}
+@keyframes close {
+  from{
+    transform: scale(1);
+      }
+      to{
+      transform: scale(0);
+      }
+}
+
+

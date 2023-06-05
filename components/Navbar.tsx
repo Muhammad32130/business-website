@@ -10,8 +10,8 @@ export default function Navbar({modal,setmodal}:any){
             <Image className="logo_img" alt="/" src={logo} />
             <ul className="nav_ul">
                 <li className="nav_li" >Home</li>
-                <li className="nav_li" >About</li>
-                <li className="nav_li" onClick={()=>setmodal(!modal)} >Contacts</li>
+                <li className="nav_li" ><a href="#about">About</a></li>
+                <li className="nav_li" onClick={()=>setmodal(!modal)} >Contact Us</li>
             </ul>
         </nav>
     )
