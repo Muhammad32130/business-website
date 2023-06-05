@@ -2,7 +2,7 @@
 import logo from "../images/logo3.png"
 import Image from "next/image";
 
-export default function Navbar({modal,setmodal}){
+export default function Navbar({modal,setmodal}:any){
     
     
     return(

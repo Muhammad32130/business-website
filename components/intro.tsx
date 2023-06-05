@@ -1,11 +1,20 @@
 import Image from "next/image";
 import image from "../images/undraw_website_setup_re_d4y9.svg"
 import Modal from "../components/Modal";
-export default function Intro({modal, setmodal}){
+import React from "react";
+interface Props {
+       modal: any;
+       setmodal: any;
+}
+
+
+export default function Intro({modal,setmodal}: Props){
+       console.log(modal)
+
     return(
      <div className="intro_main">{
-modal &&
-            <Modal modal={modal} />
+modal ?
+            <Modal modal={modal} />:null
      }
             <div className="row_intro">
             <h1 className="intro_goals">Our Goal</h1>

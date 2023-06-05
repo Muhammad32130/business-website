@@ -1,4 +1,4 @@
-export default function modal({modal}){
+export default function modal({modal}:any){
     return(
 
         <div className={`absolute_modal ${modal ? 'grow': 'close'}`}>
